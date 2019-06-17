@@ -1,0 +1,127 @@
+[
+	days([lu, ma]),
+	times([(8-10,2), (10-12, 2)]),
+	groups([grupa1, grupa2]),
+	rooms([eg105, eg104]),
+	activities([(cpl, 1), (pp, 6)]),
+	staff([
+		(mihnea, [pp, cpl]),
+		(mihaela, [pp]),
+		(andrei, [lfa])
+	])
+] 
+
+
+
+punem cp1 undeva
+scadem numarul de activitati de la cp1 (de la 1 la 0)
+
+slot(cp1,G,D,T,R,P)
+
+
+[
+	days([lu, ma]),
+	times([(8-10,2), (10-12, 2)]),
+	groups([grupa1, grupa2]),
+	rooms([eg105, eg104]),
+	activities([(cpl, 0), (pp, 6)]),
+	staff([
+		(mihnea, [pp, cpl]),
+		(mihaela, [pp]),
+		(andrei, [lfa])
+	])
+] 
+
+
+scoatem din lista ce are 0
+
+
+[
+	days([lu, ma]),
+	times([(8-10,2), (10-12, 2)]),
+	groups([grupa1, grupa2]),
+	rooms([eg105, eg104]),
+	activities([(pp, 6)]),
+	staff([
+		(mihnea, [pp, cpl]),
+		(mihaela, [pp]),
+		(andrei, [lfa])
+	])
+] 
+
+punem slot-ul cu pp
+scadem numarul lui pp de la 6 la 5
+
+slot(pp,.....)
+
+[
+	days([lu, ma]),
+	times([(8-10,2), (10-12, 2)]),
+	groups([grupa1, grupa2]),
+	rooms([eg105, eg104]),
+	activities([(pp, 5)]),
+	staff([
+		(mihnea, [pp, cpl]),
+		(mihaela, [pp]),
+		(andrei, [lfa])
+	])
+] 
+
+
+punem slot-ul cu pp
+scadem numarul lui pp de la 5 la 4
+
+slot(pp,.....)
+
+[
+	days([lu, ma]),
+	times([(8-10,2), (10-12, 2)]),
+	groups([grupa1, grupa2]),
+	rooms([eg105, eg104]),
+	activities([(pp, 4)]),
+	staff([
+		(mihnea, [pp, cpl]),
+		(mihaela, [pp]),
+		(andrei, [lfa])
+	])
+] 
+
+....
+
+
+[
+	days([lu, ma]),
+	times([(8-10,2), (10-12, 2)]),
+	groups([grupa1, grupa2]),
+	rooms([eg105, eg104]),
+	activities([(pp, 0)]),
+	staff([
+		(mihnea, [pp, cpl]),
+		(mihaela, [pp]),
+		(andrei, [lfa])
+	])
+] 
+
+
+scoate ce are 0
+
+
+[
+	days([lu, ma]),
+	times([(8-10,2), (10-12, 2)]),
+	groups([grupa1, grupa2]),
+	rooms([eg105, eg104]),
+	activities([]),
+	staff([
+		(mihnea, [pp, cpl]),
+		(mihaela, [pp]),
+		(andrei, [lfa])
+	])
+] 
+
+daca activities e [], s-a terminat
+
+
+
+
+========================

@@ -1,0 +1,39 @@
+       exp('problem(minmax1, PD), cost(([constraints([max_hours(marcel, 2, 5), max_hours(kobayashi, 3, 10)]) | PD], [slot(sport,grupa1,lu,(8-9,1),sala,marcel),slot(sport,grupa1,lu,(9-10,1),sala,marcel),slot(karate,grupa1,lu,(10-11,1),sala,marcel),slot(karate,grupa1,lu,(11-12,1),sala,marcel)]), C)', ['C', 10]),
+
+
+
+
+  cost((
+      [constraints([max_hours(marcel, 2, 5), max_hours(kobayashi, 3, 10)]) | PD]
+	  , 
+	  
+	  
+	  
+	  
+	  [
+	      slot(sport,grupa1,lu,(8-9,1),sala,marcel),
+		  slot(sport,grupa1,lu,(9-10,1),sala,marcel),
+		  slot(karate,grupa1,lu,(10-11,1),sala,marcel),
+		  slot(karate,grupa1,lu,(11-12,1),sala,marcel)
+	  ]
+	  
+	  
+	  
+	  
+	         exp('problem(minmax1, PD), cost(([constraints([max_hours(marcel, 2, 5), max_hours(kobayashi, 2, 7)]) | PD], [slot(sport,grupa1,lu,(10-11,1),sala,kobayashi),slot(sport,grupa1,lu,(11-12,1),sala,kobayashi),slot(karate,grupa1,lu,(8-9,1),sala,kobayashi),slot(karate,grupa1,lu,(9-10,1),sala,marcel)]), C)', ['C', 7]),
+ 
+
+
+
+
+
+
+problem(minmax1, [days([lu]),
+          times([(8-9, 1), (9-10, 1), (10-11, 1), (11-12, 1)]),
+          rooms([sala]),
+          groups([grupa1]),
+          activities([(sport, 2), (karate, 2)]),
+          staff([
+              (marcel, [sport, karate]),
+              (kobayashi, [sport, karate])
+          ])]) :- !.
