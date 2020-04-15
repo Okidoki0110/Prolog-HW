@@ -1,2 +1,2 @@
-# Prolog 
+
 ![Prolog](prolog.png)
